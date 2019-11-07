@@ -1,6 +1,7 @@
 # This is our project
 import turtle
 import random
+import math
 
 pen = turtle.Turtle()
 pen.screen.title("My Turtle 2")
@@ -60,10 +61,115 @@ pen.left(180-45)
 pen.forward(150)
 pen.end_fill()
 
+# лиса
+pen.up()
+pen.goto(-200,-100)
+pen.down()
+pen.width(5)
+pen.color("orange")
+# голова
+pen.forward(120)
+pen.right(180-45)
+pen.forward(84.9)
+pen.right(180-45)
+pen.forward(120)
+pen.left(180-45)
+pen.forward(84.9)
+pen.left(45)
+pen.forward(60)
+pen.left(90)
+pen.forward(60)
+# тело 1 нога
+pen.right(180-45)
+pen.forward(100)
+pen.left(180-45)
+pen.forward(math.sqrt(20000))
+pen.left(180-45)
+pen.forward(100)
+pen.backward(60)
+# 2 нога
+pen.right(135)
+pen.forward(100)
+pen.right(90)
+pen.forward(100)
+pen.right(135)
+pen.forward(141.4)
+pen.right(135)
+pen.forward(100)
+# 3 нога
+pen.right(45)
+pen.forward(math.sqrt(65*65+65*65))
+pen.right(135)
+pen.forward(65)
+pen.right(90)
+pen.forward(65)
+# хвост
+pen.right(45)
+pen.forward(40)
+pen.right(45)
+pen.forward(90)
+pen.right(135)
+pen.forward(40)
+pen.right(45)
+pen.forward(90)
+# глаз
+pen.up()
+pen.width(6)
+pen.color("red")
+pen.goto(-200,-160)
+pen.down()
+pen.circle(3)
+pen.left(90)
+pen.up()
+pen.forward(100)
+pen.write("лиса", font=("Arial", 14, "bold") )
+
+# дерево
+pen.up()
+pen.goto(-300,-50)
+pen.setheading(90)
+pen.color("brown")
+pen.down()
+pen.begin_fill()
+pen.forward(100)
+pen.right(90)
+pen.forward(30)
+pen.right(90)
+pen.forward(100)
+pen.right(90)
+pen.forward(30)
+pen.end_fill()
+pen.right(90)
+pen.forward(75)
+pen.right(90)
+pen.forward(15)
+pen.begin_fill()
+pen.color("green")
+pen.circle(60)
+pen.end_fill()
+pen.left(90)
+pen.forward(60)
+pen.right(90)
+pen.begin_fill()
+pen.circle(50)
+pen.end_fill()
+pen.left(90)
+pen.forward(70)
+pen.right(90)
+pen.begin_fill()
+pen.circle(30)
+pen.end_fill()
+
+
+
+
+
+
 # then draw the triangle
 
-"""
-# then draw spiral
+
+ # then draw grass
+""""
 pen.up();
 pen.goto(-200,-50)
 pen.color("green")
@@ -81,7 +187,7 @@ for i in range(50):
     pen.up()
     pen.goto(x, -50)
     x = x+random.randint(3,6)
-
 """
+
 
 pen.screen.exitonclick()
