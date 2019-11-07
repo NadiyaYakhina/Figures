@@ -1,7 +1,7 @@
 # This is our project
 import turtle
-# wn = turtle.Screen()
-# wn.title("My Turtle")
+import random
+
 pen = turtle.Turtle()
 pen.screen.title("My Turtle 2")
 
@@ -63,6 +63,24 @@ pen.end_fill()
 # then draw the triangle
 
 # then draw spiral
+pen.up();
+pen.goto(-200,-50)
+pen.color("green")
+pen.width(2)
+pen.left(90)
 
+
+##
+x=-200
+for i in range(50):
+    pen.down()
+    pen.setheading(90)
+    pen.width(random.randint(1,2))
+    pen.circle(random.choice([-1,1])*random.randint(200,230),random.randint(20,30))
+    pen.up()
+    pen.goto(x, -50)
+    x = x+random.randint(3,6)
+    print(i)
+    ##
 
 pen.screen.exitonclick()
