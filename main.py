@@ -62,6 +62,7 @@ pen.end_fill()
 
 # then draw the triangle
 
+"""
 # then draw spiral
 pen.up();
 pen.goto(-200,-50)
@@ -80,7 +81,7 @@ for i in range(50):
     pen.up()
     pen.goto(x, -50)
     x = x+random.randint(3,6)
-    print(i)
-    ##
+
+"""
 
 pen.screen.exitonclick()
