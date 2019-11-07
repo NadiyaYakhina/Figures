@@ -126,7 +126,7 @@ pen.write("лиса", font=("Arial", 14, "bold") )
 
 # дерево
 pen.up()
-pen.goto(-300,-50)
+pen.goto(-300,0)
 pen.setheading(90)
 pen.color("brown")
 pen.down()
@@ -169,25 +169,22 @@ pen.end_fill()
 
 
  # then draw grass
-""""
-pen.up();
-pen.goto(-200,-50)
+"""
 pen.color("green")
 pen.width(2)
-pen.left(90)
-
 
 ##
-x=-200
-for i in range(50):
+x=-270
+y=-10
+for counter in range(40):
+    pen.up()
+    pen.goto(x, y)
     pen.down()
     pen.setheading(90)
-    pen.width(random.randint(1,2))
-    pen.circle(random.choice([-1,1])*random.randint(200,230),random.randint(20,30))
-    pen.up()
-    pen.goto(x, -50)
+    pen.width(random.randint(1,3))
+    pen.circle(  random.choice([-1,1]) * random.randint(100,130),     random.randint(10,20))
     x = x+random.randint(3,6)
-"""
 
+"""
 
 pen.screen.exitonclick()
