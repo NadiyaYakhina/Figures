@@ -209,10 +209,14 @@ def tree(x, y, size, colorTrunk, colorLeaves):
 
 # начинаем рисовать тут
 house(100, 0, 150, "red", "green")
-fox(-200, -160, "orange")
+house(200, 40, 100, "yellow", "green")
+fox(-300, -200, "orange")
+fox(0, -200, "brown")
 tree(-100, 0, 50, "brown", "green")
 tree(-200, 0, 50, "brown", "green")
 tree(-300, 0, 90, "brown", "green")
+tree(-50, 0, 60, "brown", "green")
+tree(0, 0, 80, "brown", "green")
 
 
 
